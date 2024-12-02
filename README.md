@@ -1,69 +1,43 @@
-# JellyFin Title Modifier
+# JellyFilm Titre Modifieur
 
-## Description
+Une extension Chrome qui remplace aléatoirement des mots dans les titres sur Jellyfin et Google Search.
 
-JellyFin Title Modifier is a Chrome extension that replaces words in the titles of movies and series on JellyFin. You can configure multiple replacement words, and the extension will randomly choose one to replace words in the titles. If a title contains a colon (`:`), it will replace a word on both sides of the colon with different words.
+## Fonctionnalités
 
-## Example
+### Sur Jellyfin
+- Remplace le dernier mot de chaque partie du titre (avant et après les `:`)
+- Si le titre se termine par un nombre, ajoute un mot aléatoire à la fin
+- Évite les doublons dans les remplacements
 
-![Example of modified titles](example.png)
-
-In this example, all titles have been modified with the words "couille" or "pouet".
-
-## Features
-
-- Replace the last word in movie and series titles
-- Configure multiple replacement words through the extension popup
-- Special handling for different title formats:
-  - For titles with numbers: adds the word after the number
-  - For titles with colons: replaces words on both sides with different words
-- Works in both grid and list views
+### Sur Google Search
+- Remplace 2 à 3 mots aléatoires dans :
+  - Les titres des résultats de recherche
+  - Les descriptions
+  - Les sous-titres
 
 ## Installation
 
-1. **Clone the Repository:**
+1. Clonez ce repository ou téléchargez les fichiers
+2. Ouvrez Chrome et allez dans `chrome://extensions/`
+3. Activez le "Mode développeur" en haut à droite
+4. Cliquez sur "Charger l'extension non empaquetée"
+5. Sélectionnez le dossier contenant les fichiers de l'extension
 
-   ```bash
-   git clone https://github.com/yourusername/jellyfin-title-modifier.git
-   ```
+## Utilisation
 
-2. **Open Chrome Extensions Page:**
+- L'extension fonctionne automatiquement sur Jellyfin et Google Search
+- Cliquez sur l'icône de l'extension pour voir les options
+- Les modifications sont appliquées à chaque chargement de page
 
-   Go to `chrome://extensions/` in your Chrome browser.
+## Sites supportés
 
-3. **Enable Developer Mode:**
+- Jellyfin (*.eclipse.usbx.me/*)
+- Google Search (*.google.fr/*, *.google.com/*)
 
-   Toggle the "Developer mode" switch in the top right corner.
+## Contribution
 
-4. **Load Unpacked Extension:**
+N'hésitez pas à contribuer au projet en soumettant des pull requests ou en signalant des bugs.
 
-   Click on "Load unpacked" and select the folder where you cloned the repository.
+## Licence
 
-5. **Configure Replacement Words:**
-
-   - Click on the extension icon in the Chrome toolbar
-   - Enter your replacement words (one per line) in the popup
-   - Click "Save" to store your words
-
-## Usage
-
-1. Navigate to your JellyFin instance
-2. The extension will automatically modify titles according to these rules:
-   - Regular titles: last word is replaced
-   - Titles ending with numbers: word is added after the number
-   - Titles with colons: last word of each part is replaced with different words
-
-## Examples
-
-- "Avatar" → "Avatar Pouet"
-- "Fast and Furious" → "Fast and Couille"
-- "Star Wars: A New Hope" → "Star Pouet : A New Couille"
-- "Fast 5" → "Fast 5 Pouet"
-
-## Contributing
-
-Feel free to submit issues or pull requests if you have suggestions or improvements.
-
-## License
-
-This project is licensed under the MIT License.
+[Votre licence ici]
