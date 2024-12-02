@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "JellyFilm Titre Modifieur",
+    "version": "1.0",
+    "description": "Remplace un mot aléatoire dans les titres de JellyFilm",
+    "permissions": ["storage"],
+    "host_permissions": ["*://*.eclipse.usbx.me/*"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "*://*.eclipse.usbx.me/*",
+          "*://*.eclipse.usbx.me/jellyfin/web/*"
+        ],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ]
+  }
