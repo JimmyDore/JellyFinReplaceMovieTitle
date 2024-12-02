@@ -8,7 +8,7 @@ JellyFin Title Modifier is a Chrome extension that replaces words in the titles 
 
 ![Example of modified titles](example.png)
 
-In this example, all titles have been modified with the word "couille".
+In this example, all titles have been modified with the words "couille" or "pouet".
 
 ## Features
 
